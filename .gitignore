@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Node (if you add npm later)
+node_modules/
+dist/
+build/
+
+# Env files (if PHP backend later)
+.env
