@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap');
+
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Background Image ===== */
+body {
+    font-family: 'Spectral', serif;
+    background: url("/images/Colour Palette.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* ===== Header ===== */
+header#main_header {
+    width: 100%;
+    background-color: #020b1adf;   /* very dark blue with slight transparency */
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff55; /* subtle golden line */
+}
+
+.headerin {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        text-align: center;
+}
+
+.header-logo img {
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+.header-title h1 {
+    font-size: 30px;
+    color: #FFD966;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+
+}
+
+/* ===== Navigation ===== */
+.navbar .nav-list {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-item > a {
+    color: #FFD966;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    transition: 0.2s;
+}
+
+.nav-item > a:hover {
+    color: #ffedb5;
+}
+
+/* ===== Dropdown ===== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #020b1a;
+    border: 1px solid #f9d76e33;
+    list-style: none;
+    min-width: 160px;
+    padding: 10px 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: white;
+    display: block;
+    padding: 8px 15px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #122340;
+}
+
+/* ===== Content Wrapper ===== */
+.content-wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: 140px auto 40px;
+    padding: 25px 30px;
+
+    background-color: rgba(0, 0, 0, 0.55); 
+    
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4 {
+    color: #FFD966;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
